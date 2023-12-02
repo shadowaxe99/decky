@@ -1,0 +1,75 @@
+As an AI language model, I'm unable to generate binary files such as `.glb` directly. However, I can provide an example of how you might reference such a file within a JavaScript file that would be used to load the `.glb` model into a Three.js scene.
+
+Here's an example of JavaScript code that would load the `environments.glb` file using Three.js's `GLTFLoader`:
+
+```javascript
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+// Initialize scene, camera, and renderer
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
+
+// Instantiate a loader
+const loader = new GLTFLoader();
+
+// Load a glTF resource
+loader.load(
+  // resource URL
+  'assets/models/environments.glb',
+  // called when the resource is loaded
+  function (gltf) {
+    scene.add(gltf.scene);
+    gltf.animations; // Array<THREE.AnimationClip>
+    gltf.scene; // THREE.Group
+    gltf.scenes; // Array<THREE.Group>
+    gltf.cameras; // Array<THREE.Camera>
+    gltf.asset; // Object
+
+    // Update the animation mixer on each frame
+    mixer = new THREE.AnimationMixer(gltf.scene);
+    gltf.animations.forEach((clip) => {
+      mixer.clipAction(clip).play();
+    });
+
+    animate();
+  },
+  // called while loading is progressing
+  function (xhr) {
+    console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+  },
+  // called when loading has errors
+  function (error) {
+    console.error('An error happened', error);
+  }
+);
+
+// Animation loop
+function animate() {
+  requestAnimationFrame(animate);
+
+  // Update the animation mixer
+  const delta = clock.getDelta();
+  mixer.update(delta);
+
+  renderer.render(scene, camera);
+}
+
+// Handle window resize
+window.addEventListener('resize', onWindowResize, false);
+function onWindowResize() {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+}
+
+// Start the animation loop
+animate();
+```
+
+Please note that this code assumes you have the necessary Three.js modules installed and configured in your project. The `GLTFLoader` is used to load the `.glb` file, and the loaded model is added to the scene. The `animate` function is called to start the animation loop, and the `onWindowResize` function ensures the scene adjusts to the window size if it changes.
+
+Remember, this code would be part of a JavaScript file that you would include in your project to work with the `environments.glb` file. The actual `.glb` file is a binary file that contains the 3D model data and cannot be represented as code.

@@ -1,0 +1,91 @@
+{
+  "avatars": [
+    {
+      "id": "avatar-001",
+      "name": "The Visionary",
+      "description": "A creative thinker and dreamer, ready to explore the vast possibilities of Elysium.",
+      "modelPath": "assets/models/characters.glb",
+      "texturePath": "assets/textures/character.png",
+      "specialEffects": [
+        {
+          "effect": "hologram",
+          "shaderPath": "js/threejs/hologramShader.js"
+        }
+      ],
+      "interactions": [
+        {
+          "type": "greeting",
+          "soundPath": "assets/sounds/interaction.wav"
+        }
+      ]
+    },
+    {
+      "id": "avatar-002",
+      "name": "The Strategist",
+      "description": "A tactical genius, always planning the next move to conquer challenges in Elysium.",
+      "modelPath": "assets/models/characters.glb",
+      "texturePath": "assets/textures/character.png",
+      "specialEffects": [
+        {
+          "effect": "glow",
+          "parameters": {
+            "color": "0x00ff00",
+            "intensity": 1.5
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "type": "highFive",
+          "soundPath": "assets/sounds/interaction.wav"
+        }
+      ]
+    },
+    {
+      "id": "avatar-003",
+      "name": "The Innovator",
+      "description": "An inventor at heart, using technology and creativity to build a better Elysium.",
+      "modelPath": "assets/models/characters.glb",
+      "texturePath": "assets/textures/character.png",
+      "specialEffects": [
+        {
+          "effect": "particleSystem",
+          "parameters": {
+            "particleCount": 1000,
+            "particleSize": 0.05,
+            "spread": 1
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "type": "ideaShare",
+          "soundPath": "assets/sounds/interaction.wav"
+        }
+      ]
+    },
+    {
+      "id": "avatar-004",
+      "name": "The Collaborator",
+      "description": "A team player, fostering connections and collaboration within the Elysium community.",
+      "modelPath": "assets/models/characters.glb",
+      "texturePath": "assets/textures/character.png",
+      "specialEffects": [
+        {
+          "effect": "aura",
+          "parameters": {
+            "color": "0x0000ff",
+            "intensity": 2.0,
+            "distance": 0.5
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "type": "teamUp",
+          "soundPath": "assets/sounds/interaction.wav"
+        }
+      ]
+    }
+  ]
+}

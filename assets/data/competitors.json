@@ -1,0 +1,58 @@
+{
+  "competitors": [
+    {
+      "name": "Roblox",
+      "productFeatures": {
+        "userGeneratedGames": true,
+        "robloxStudio": true,
+        "virtualEconomy": true
+      },
+      "userExperience": {
+        "socialInteractionFocus": true,
+        "avatarCustomization": true,
+        "childFriendlyContent": true
+      },
+      "technologicalAdvancements": {
+        "massiveMultiplayerOnline": true,
+        "crossDeviceGameplay": true,
+        "continuousUpdates": true
+      }
+    },
+    {
+      "name": "Sandbox",
+      "productFeatures": {
+        "voxelWorldBuilding": true,
+        "nftMarketplace": true,
+        "gameMakerTool": true
+      },
+      "userExperience": {
+        "creativeFreedom": true,
+        "playerDrivenEconomy": true,
+        "communityEvents": true
+      },
+      "technologicalAdvancements": {
+        "blockchainOwnership": true,
+        "decentralizedPlatform": true,
+        "cryptocurrencyIntegration": true
+      }
+    },
+    {
+      "name": "Elysium",
+      "productFeatures": {
+        "aiGuardians": true,
+        "theArena": true,
+        "automationStation": true
+      },
+      "userExperience": {
+        "personalizedAiInteractions": true,
+        "engagingGamingExperiences": true,
+        "intuitivePlatformDesign": true
+      },
+      "technologicalAdvancements": {
+        "advancedAiTechnology": true,
+        "arbitrumBlockchainIntegration": true,
+        "dataDrivenCustomization": true
+      }
+    }
+  ]
+}
