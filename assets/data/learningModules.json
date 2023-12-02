@@ -1,0 +1,87 @@
+[
+  {
+    "moduleTitle": "Elysium OS: Unleash Your Potential",
+    "moduleDescription": "Embark on an epic journey with Elysium OS, the fusion of gaming and productivity! Revolutionize learning with cutting-edge AI and secure blockchain tech.",
+    "moduleID": "unleash-potential",
+    "interactiveElements": [
+      {
+        "type": "3DModel",
+        "modelPath": "assets/models/arena.glb",
+        "description": "Explore the Arena, a place where gaming and productivity merge into an exciting experience."
+      },
+      {
+        "type": "Quiz",
+        "questionsPath": "assets/data/quiz/unleash-potential-quiz.json",
+        "description": "Test your knowledge about the features and benefits of Elysium OS."
+      }
+    ]
+  },
+  {
+    "moduleTitle": "The Arena: Elevate Your Gaming Experience",
+    "moduleDescription": "Get ready to embark on epic gaming adventures in The Arena, where cutting-edge features and enhanced gameplay will transport you to unforgettable realms of excitement.",
+    "moduleID": "gaming-experience",
+    "interactiveElements": [
+      {
+        "type": "3DModel",
+        "modelPath": "assets/models/characters.glb",
+        "description": "Customize your character and prepare for multiplayer battles."
+      },
+      {
+        "type": "PvPChallenge",
+        "challengePath": "assets/data/challenges/pvp-challenge.json",
+        "description": "Engage in intense multiplayer battles and rise to the top."
+      }
+    ]
+  },
+  {
+    "moduleTitle": "Transforming Learning: Benefits for Students",
+    "moduleDescription": "Engaging visualizations and interactive learning modules make complex concepts easy to grasp, enhancing understanding and retention.",
+    "moduleID": "transforming-learning",
+    "interactiveElements": [
+      {
+        "type": "Visualization",
+        "visualizationPath": "assets/data/visualizations/complex-concepts.json",
+        "description": "Explore complex concepts through captivating visualizations."
+      },
+      {
+        "type": "GamifiedExercise",
+        "exercisePath": "assets/data/exercises/gamified-exercise.json",
+        "description": "Embark on exciting learning adventures with gamified exercises."
+      }
+    ]
+  },
+  {
+    "moduleTitle": "Arbitrum Blockchain Integration: Secure Trading and Transactions",
+    "moduleDescription": "Elysium OS's integration of the Arbitrum blockchain ensures secure and efficient trading, with decentralized trust and smart contracts.",
+    "moduleID": "blockchain-integration",
+    "interactiveElements": [
+      {
+        "type": "SmartContractDemo",
+        "demoPath": "assets/data/demos/smart-contract-demo.json",
+        "description": "Learn how smart contracts automate complex agreements and enforce trust."
+      },
+      {
+        "type": "TransactionSimulation",
+        "simulationPath": "assets/data/simulations/transaction-simulation.json",
+        "description": "Experience fast and feeless financial transactions within the Elysium OS."
+      }
+    ]
+  },
+  {
+    "moduleTitle": "AI Personas: Intelligence with Unique 'Personas'",
+    "moduleDescription": "Interact with AI agents featuring unique 'Personas,' providing intelligent assistance and elevated user experiences across various applications.",
+    "moduleID": "ai-personas",
+    "interactiveElements": [
+      {
+        "type": "AIDemo",
+        "demoPath": "assets/data/demos/ai-demo.json",
+        "description": "Meet the versatile AI agents and discover how they can assist you in different scenarios."
+      },
+      {
+        "type": "PersonalizationActivity",
+        "activityPath": "assets/data/activities/personalization-activity.json",
+        "description": "Experience data-driven personalization as AI agents adapt to your preferences."
+      }
+    ]
+  }
+]
